@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Mike Qu">
+    <!-- Define title -->
+    <title>Mike Qu</title>
+    <script type="application/ld+json">
+      {
+        "@context": "http://www.schema.org",
+        "@type": "person",
+        "name": "Mike Qu",
+        "gender": "male",
+        "url": "https://www.mikequ1.github.io/",
+      }
+    </script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Include style sheets -->
+    <link rel="stylesheet" href="main.css" />
+    <!-- Fonts from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
+    <!-- Load FontAwesome (for icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" />
+    <!-- Load Academicons (for more icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <!-- <a class="navbar-brand" href="#"></a> -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <u>
+              <a class="nav-link active mx-3" href="https://mikequ1.github.io" aria-current="page">Home</a>
+            </u>
+            <u>
+              <a class="nav-link active mx-3" href="ecu.html" aria-current="page">ECU</a>
+            </u>
+            <u>
+              <a class="nav-link active mx-3" href="CV.pdf" aria-current="page">CV</a>
+            </u>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="section">
+      <div style="text-align: center;">
+        <img id="halfsize" src="smv_1.jpg"></img>
+        <br><br>
+        <div>
+          <p style="width: 700px; margin: auto"> 
+            Throughout my undergraduate career, I have been involved in <b>Bruin Supermileage</b>, <br>
+            a student organization at UCLA to research, design, and build ultra-high efficient vehicles.<br>
+            I was the Managing Director (2022-2023), and the Electronics Lead (2021-2022) <br>
+            <br>
+            My main project was the <b>ECU (Engine Control Unit) </b> for the internal combustion powertrain <br>
+          </p>
+        </div>
+        <hr>
+        <p>
+          Modular, interrupt-driven <a href="https://github.com/mikequ1/ECU-Software">code</a> that performs electronic fuel injection<br>
+          using a microcontroller built into our hardware<br>
+          <b>Responsibile for:</b> <br>
+          Arbitrating engine state, Calculating optimal air-fuel ratio <br>
+          Interpret raw sensor values from ADC, Data acquisition <br>
+          Timing fuel injections, Debug and data logging, etc. <br>
+        </p>
+        <hr>
+        <p> Engine Control Module Hardware </p>
+        <img id="halfsize" src="ecu_v1.jpg"></img>
+        <p>
+          <b> Responsible for: </b> <br>
+          Converting 12V battery power to 5V logic, Level shifting for MCU's 3.3V logic<br>
+          Preventing starter motor's high current draw from draining power to MCU <br>
+          Decoupling capacitors for input signals, Switching Fuel Injector on/off <br>
+        </p>
+        <hr>
+        <p>
+          Wiring Diagram:
+        </p>
+        <img id="halfsize" src="wiring.png"></img>
+        <hr>
+        <video width="320"  controls>
+          <source src="op.mp4" type="video/mp4">
+        </video>
+        
+      </div>
+      <!-- Icons -->
+      <ul class="icons">
+        <li>
+          <a href="mailto:mikequ@ucla.edu" target="_blank" title="E-Mail">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/mikequ1" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/mikequ1/" target="_blank" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </body>
+</html>
