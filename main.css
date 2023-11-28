@@ -9,10 +9,7 @@ body {
 }
 
 .halfsize {
-    -moz-transform:scale(0.9);
-    -webkit-transform:scale(0.9);
-    transform:scale(0.9);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }   
 
 img {
