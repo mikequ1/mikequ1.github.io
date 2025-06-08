@@ -1,89 +1,525 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Mike Qu">
-    <!-- Define title -->
-    <title>Mike Qu</title>
-    <script type="application/ld+json">
-      {
-        "@context": "http://www.schema.org",
-        "@type": "person",
-        "name": "Mike Qu",
-        "gender": "male",
-        "url": "https://www.mikequ1.github.io/",
-      }
-    </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- Include style sheets -->
-    <link rel="stylesheet" href="main.css" />
-    <!-- Fonts from Google Fonts -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dopefolio</title>
+    <meta name="description" content="Portfolio Template for Developer" />
+
+    <link rel="stylesheet" href="css/style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;600&display=swap" rel="stylesheet" />
-    <!-- Load FontAwesome (for icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" />
-    <!-- Load Academicons (for more icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.2/css/academicons.min.css" integrity="sha512-KlJCpRsLf+KKu2VQa5vmRuClRFjxc5lXO03ixZt82HZUk41+1I0bD8KBSA0fY290ayMfWYI9udIqeOWSu1/uZg==" crossorigin="anonymous" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#"></a> -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <u>
-              <a class="nav-link active mx-3" href="https://mikequ1.github.io" aria-current="page">Home</a>
-            </u>
-            <u>
-              <a class="nav-link active mx-3" href="ecm.html" aria-current="page">ECM</a>
-            </u>
-            <u>
-              <a class="nav-link active mx-3" href="CV.pdf" aria-current="page">CV</a>
-            </u>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__logo-container">
+          <div class="header__logo-img-cont">
+            <img
+              src="./assets/png/john-doe.png"
+              alt="Ram Maheshwari Logo Image"
+              class="header__logo-img"
+            />
+          </div>
+          <span class="header__logo-sub">Mike Qu</span>
+        </div>
+        <div class="header__main">
+          <ul class="header__links">
+            <!-- <li class="header__link-wrapper">
+              <a href="./index.html" class="header__link"> Home </a>
+            </li> -->
+            <li class="header__link-wrapper">
+              <a href="./index.html#about" class="header__link">About </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#research" class="header__link">
+                Research
+              </a>
+            </li>
+            <li class="header__link-wrapper">
+              <a href="./index.html#projects" class="header__link">
+                Projects
+              </a>
+            </li>
+            <!-- <li class="header__link-wrapper">
+              <a href="./index.html#contact" class="header__link"> Contact </a>
+            </li> -->
+          </ul>
+          <div class="header__main-ham-menu-cont">
+            <img
+              src="./assets/svg/ham-menu.svg"
+              alt="hamburger menu"
+              class="header__main-ham-menu"
+            />
+            <img
+              src="./assets/svg/ham-menu-close.svg"
+              alt="hamburger menu close"
+              class="header__main-ham-menu-close d-none"
+            />
           </div>
         </div>
       </div>
-    </nav>
-    <section id="content" class="section">
-      <br><br><br><br>
-      <img id="halfsize" style="margin-bottom: 10px" src="mike1.png"></img>
-      <h1>Mike (Zhengyu) Qu</h1>
-      <p> 
-        4th year Computer Engineering Student at UCLA! <br>
-        I'm passionate about building complex systems using computational methods and applying my background in machine learning, embedded systems, and assistive devices to solve interdisciplinary problems.
-        Currently also part of <a href="https://seas.ucla.edu/~kao/people">Professor Jonathan Kao's research group</a> at UCLA on neural engineering and computation. <br>
+      <div class="header__sm-menu">
+        <div class="header__sm-menu-content">
+          <ul class="header__sm-menu-links">
+            <!-- <li class="header__sm-menu-link">
+              <a href="./index.html"> Home </a>
+            </li> -->
 
+            <li class="header__sm-menu-link">
+              <a href="./index.html#about"> About </a>
+            </li>
 
-      </p>
-      <p>
-        <span class="hovertext"> Email: mikequ [at] ucla [dot] edu </a>
-        </span>
-      </p>
-      <!-- Icons -->
-      <ul class="icons">
-        <li>
-          <a href="mailto:mikequ@ucla.edu" target="_blank" title="E-Mail">
-            <i class="fas fa-envelope"></i>
+            <li class="header__sm-menu-link">
+              <a href="./index.html#research"> Research </a>
+            </li>
+
+            <li class="header__sm-menu-link">
+              <a href="./index.html#projects"> Projects </a>
+            </li>
+
+            <!-- <li class="header__sm-menu-link">
+              <a href="./index.html#contact"> Contact </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- <section class="home-hero">
+      <div class="home-hero__content"> -->
+        <!-- <h1 class="heading-primary">Hey, My name is John Doe</h1> -->
+        <!-- <div class="home-hero__info">
+          <p class="text-primary">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente solutions for
+            complex problems
+          </p>
+        </div>
+        <div class="home-hero__cta">
+          <a href="./#projects" class="btn btn--bg">Projects</a>
+        </div>
+      </div>
+      <div class="home-hero__socials">
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/linkedin-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
           </a>
-        </li>
-        <li>
-          <a href="https://github.com/mikequ1" target="_blank" title="GitHub">
-            <i class="fab fa-github"></i>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/github-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
           </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/mikequ1/" target="_blank" title="LinkedIn">
-            <i class="fab fa-linkedin"></i>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/twitter-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
           </a>
-        </li>
-      </ul>
+        </div>
+        <div class="home-hero__social">
+          <a href="#" class="home-hero__social-icon-link">
+            <img
+              src="./assets/png/yt-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+        <div class="home-hero__social">
+          <a
+            href="#"
+            class="home-hero__social-icon-link home-hero__social-icon-link--bd-none"
+          >
+            <img
+              src="./assets/png/insta-ico.png"
+              alt="icon"
+              class="home-hero__social-icon"
+            />
+          </a>
+        </div>
+      </div>
+      <div class="home-hero__mouse-scroll-cont">
+        <div class="mouse"></div>
+      </div>
+    </section> -->
+    <section id="about" class="about sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+        </h2>
+        <div class="about__content">
+          <div class="about__content-main">
+            <h3 class="about__content-title">Get to know me!</h3>
+            <div class="about__content-details">
+              <p class="about__content-details-para">
+                Hey there! My name is <strong>Mike Qu</strong>
+                and I'm an <strong> AI/ML Researcher and Engineer </strong> currently based in New York. 
+                I am currently wrapping up a Master's in Computer Science at <strong>Columbia University</strong> specializing in Machine Learning.
+                Previously, I earned combined B.S. and M.S. Degrees in Electrical and Computer Engineering at <strong>UCLA</strong>, focusing on Signals and Systems.
+              </p>
+              <p class="about__content-details-para">
+                I’ve conducted research on <strong>noise-robust speech enhancement</strong> with Dr. Julia Hirschberg (Columbia), 
+                <strong>RAG document intelligence</strong> and <strong>tabular data synthesis</strong> with Dr. Yingzhen Li (Imperial College London), 
+                and <strong>non-invasive brain–machine interfaces</strong> with Dr. Jonathan Kao (UCLA).
+              </p>
+              <p class="about__content-details-para">
+                Professionally, I interned twice at <strong>Amazon</strong> as a Software Development Engineer, where I worked on optimizing latency and memory performance on Echo Devices.
+              </p>
+              <p class="about__content-details-para">
+                Feel free to <strong>contact</strong> me here. I'd love to connect.
+              </p>
+            </div>
+            <a href="./#contact" class="btn btn--med btn--theme dynamicBgClr"
+              >Contact</a
+            >
+          </div>
+          <div class="about__content-skills">
+            <h3 class="about__content-title">My Skills</h3>
+              <p class="about__content-details-para">
+                <strong>Programming</strong>
+              </p>
+            <div class="skills">
+              <div class="skills__skill">Python</div>
+              <div class="skills__skill">C/C++</div>
+              <div class="skills__skill">SQL</div>
+              <div class="skills__skill">Javascript</div>
+              <div class="skills__skill">Git</div>
+              <div class="skills__skill">Bash</div>
+              <div class="skills__skill">LaTeX</div>
+              <div class="skills__skill">AWS/GCP</div>
+            </div>
+              <p class="about__content-details-para">
+                <strong>Frameworks & Tools</strong>
+              </p>
+            <div class="skills">
+              <div class="skills__skill">PyTorch</div>
+              <div class="skills__skill">scikit-learn</div>
+              <div class="skills__skill">HuggingFace</div>
+              <div class="skills__skill">Numpy</div>
+              <div class="skills__skill">Pandas</div>
+              <div class="skills__skill">Matplotlib</div>
+              <div class="skills__skill">wandb</div>
+              <div class="skills__skill">OpenCV</div>
+            </div>
+              <p class="about__content-details-para">
+                <strong>Concepts</strong>
+              </p>
+            <div class="skills">
+              <div class="skills__skill">Machine Learning</div>
+              <div class="skills__skill">Data Science</div>
+              <div class="skills__skill">Generative Models</div>
+              <div class="skills__skill">Signal Processing</div>
+              <div class="skills__skill">NLP</div>
+              <div class="skills__skill">Reinforcement Learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+    <section id="research" class="projects sec-pad">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Research</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
+
+        <div class="projects__content b">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 2</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/tabrep.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">TabRep: Training Tabular Diffusion Models with a Simple and Effective Continuous Representation</h3>
+              <p class="projects__row-content-desc">
+                <strong>[In Submission @ NeurIPS'25]</strong>
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/ai-bmi.jpg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Non-invasive brain-machine interface control with artificial intelligence copilots</h3>
+              <p class="projects__row-content-desc">
+                <strong>[Presented @ COSYNE'25]</strong>
+                <br>
+                <strong>[Accepted In Principle @ Nature Machine Intelligence]</strong>
+              </p>
+              <a
+                href="./project-3.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="projects" class="projects sec-pad a">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-bg">
+          <span class="heading-sec__main">Projects</span>
+          <!-- <span class="heading-sec__sub">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span> -->
+        </h2>
+
+        <div class="projects__content">
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./assets/jpeg/project-mockup-example.jpeg"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Project 1</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-1.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+          <div class="projects__row">
+            <div class="projects__row-img-cont">
+              <img
+                src="./imgs/smv.png"
+                alt="Software Screenshot"
+                class="projects__row-img"
+                loading="lazy"
+              />
+            </div>
+            <div class="projects__row-content">
+              <h3 class="projects__row-content-title">Electronic Fuel Injection System for a Hyper-efficient Vehicle</h3>
+              <p class="projects__row-content-desc">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                facilis tempora, explicabo quae quod deserunt eius sapiente
+                praesentium.
+              </p>
+              <a
+                href="./project-2.html"
+                class="btn btn--med btn--theme dynamicBgClr"
+                target="_blank"
+                >Case Study</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section id="contact" class="contact sec-pad dynamicBg">
+      <div class="main-container">
+        <h2 class="heading heading-sec heading-sec__mb-med">
+          <span class="heading-sec__main heading-sec__main--lt">Contact</span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic facilis
+            tempora explicabo quae quod deserunt eius sapiente
+          </span>
+        </h2>
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">Name</label>
+              <input
+                required
+                placeholder="Enter Your Name"
+                type="text"
+                class="contact__form-input"
+                name="name"
+                id="name"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">Email</label>
+              <input
+                required
+                placeholder="Enter Your Email"
+                type="text"
+                class="contact__form-input"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact__form-input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </section> -->
+    <footer class="main-footer">
+      <div class="main-container">
+        <div class="main-footer__upper">
+          <div class="main-footer__row main-footer__row-1">
+            <h2 class="heading heading-sm main-footer__heading-sm">
+              <span>Social</span>
+            </h2>
+            <div class="main-footer__social-cont">
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/linkedin-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/github-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/twitter-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon"
+                  src="./assets/png/yt-ico.png"
+                  alt="icon"
+                />
+              </a>
+              <a target="_blank" rel="noreferrer" href="#">
+                <img
+                  class="main-footer__icon main-footer__icon--mr-none"
+                  src="./assets/png/insta-ico.png"
+                  alt="icon"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="main-footer__row main-footer__row-2">
+            <h4 class="heading heading-sm text-lt">John Doe</h4>
+            <p class="main-footer__short-desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit facilis
+              tempora explicabo quae quod deserunt
+            </p>
+          </div>
+        </div>
+
+        <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+        <div class="main-footer__lower">
+          &copy; Copyright 2021. Made by
+          <a rel="noreferrer" target="_blank" href="https://rammaheshwari.com"
+            >Ram Maheshwari</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>
