@@ -63,7 +63,7 @@ textarea {
   resize: none; }
 
 .heading-primary {
-  font-size: 6rem;
+  font-size: 4rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   text-align: center; }
@@ -724,6 +724,22 @@ textarea {
     opacity: 1;
     animation: wheel 1.3s infinite;
     -webkit-animation: wheel 1.3s infinite; }
+
+.video-container {
+  display: flex;
+  justify-content: center; /* or space-between / flex-start */
+  gap: 20px; /* space between videos */
+  flex-wrap: wrap; /* allows wrapping on smaller screens */
+}
+
+.video-container video {
+  width: 45%;   /* or fixed like 200px */
+  height: auto;  /* maintain aspect ratio */
+  max-height: 90vh;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
 
 @keyframes wheel {
   to {
